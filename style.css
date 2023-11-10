@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.container{
+    display: flex;
+    height: 100vh;
+}
+.leftSide{
+    width: 50%;    
+    background-image: url("./images/bg-main-desktop.png");
+    background-repeat: no-repeat;
+}
+.frontCard{
+    background-image: url("./images/bg-card-front.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 300px;
+    color: white;
+    margin-top: 200px;
+    margin-left: 150px;
+    padding: 20px;
+}
+.circle{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.bigCircle{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: white;
+}
+.smallCircle{
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    border:1px solid white;
+    margin-left: 5px;
+}
+.backCard{
+    background-image: url("./images/bg-card-back.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 300px;    
+    margin-left: 300px;
+}
+.backNumber{
+    color: white;
+    font-size: 16px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 60px;    
+    padding-bottom: 55px;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+.frontNumber{
+    width: 100%;
+    letter-spacing: 5px;
+    font-size: 24px;
+    font-weight: 400;
+}
+.cardName{
+    width: 100%;
+    display: flex;    
+    font-size: 16px;
+    justify-content: space-between;
+    padding-top: 40px;
+    text-transform: uppercase;
+}
+.date{
+    letter-spacing: 2px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+.rightSide{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    width: 400px;
+    height: 400px;  
+    display: flex;  
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+.form p{
+    font-size: 12px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+}
+.cardHolderName input,.cardHolderNumber input{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid hsl(270, 3%,87%);
+    padding-left: 15px;
+    font-size: 18px;
+    letter-spacing: 1px;
+
+}
+.dateCVC{
+    display: flex;
+}
+.dateMMYY{
+    width: 50%;
+}
+.dateMMYY input{
+    width: 30%;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid hsl(270, 3%,87%);
+    padding-left: 15px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.cvc input{    
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid hsl(270, 3%,87%);
+    padding-left: 15px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.cvc input:hover,.dateMMYY input:hover,.cardHolderName input:hover,.cardHolderNumber input:hover{
+    border: 1px solid transparent;
+    background: 
+        linear-gradient(to right, white, white), 
+        linear-gradient(to left, hsl(278, 94%, 30%) , hsl(249, 99%, 64%)); 
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+.errorText{
+    color: red;
+    font-size: 12px;
+    padding-top: 5px;
+}
+input.error{
+    border: 1px solid red;
+}
+.submit{
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: hsl(278, 68%, 11%);
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+      
+    cursor: pointer;
+}
+.complete{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;    
+    width: 400px;
+    height: 300px;
+}
+.hidden{
+    display: none;
+}
+.complete h2{
+    text-transform: uppercase;
+    color: hsl(278, 68%, 11%);
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+.complete p{
+    color: hsl(279, 6%, 55%);
+    font-size: 20px;
+}
+.complete button{    
+        width: 100%;
+        height: 50px;
+        color: white;
+        background-color: hsl(278, 68%, 11%);
+        font-size: 18px;
+        font-weight: 500;
+        border: none;
+        border-radius: 10px;          
+        cursor: pointer;    
+}
